@@ -6,7 +6,7 @@ version = "0.1.0"
 
 [dependencies]
 bare-metal = "1"
-riscv = "0.8.0"
+riscv = "0.9.0"
 vcell = "0.1.0"
 
 [dependencies.riscv-rt]

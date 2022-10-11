@@ -29,8 +29,7 @@ version = "0.1.0"
 dependencies = [
  "hpm6750-rs",
  "panic-halt",
- "riscv",
- "riscv-rt",
+ "riscv 0.9.0",
 ]
 
 [[package]]
@@ -48,7 +47,7 @@ name = "hpm6750-rs"
 version = "0.1.0"
 dependencies = [
  "bare-metal",
- "riscv",
+ "riscv 0.9.0",
  "riscv-rt",
  "vcell",
 ]
@@ -139,13 +138,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "riscv"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "73fc4bc7113424814738fe79755a5764e392b3d4d1bc757e6aa6f61cede32095"
+dependencies = [
+ "bare-metal",
+ "bit_field",
+ "embedded-hal",
+]
+
+[[package]]
 name = "riscv-rt"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "527ddfacbbfeed89256163c2655b0392c4aa76dd95c0189dc05044bf2c47c3f8"
 dependencies = [
  "r0",
- "riscv",
+ "riscv 0.8.0",
  "riscv-rt-macros",
  "riscv-target",
 ]
